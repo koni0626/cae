@@ -1,13 +1,13 @@
 # 使い方
 
-## 訓練するとき
+## 訓練するときの指定例
 ```
-python ConvAutoEncoder.py --mode train --train_img_dir="data\cut\0000" --weight_dir="weights" --encode_img_dir="cae_output"
+python ConvAutoEncoder.py --mode train --train_img_dir="data\train_dir" --weight_dir="weights" --encode_img_dir="cae_output"
 ```
 
-## 予測するとき
+## 予測するときの指定例
 ```
-python ConvAutoEncoder.py --mode test --test_img_dir=data\cut\0000test --weight_file=weights_cae\cae_1499.pth --batch_size=2
+python ConvAutoEncoder.py --mode test --test_img_dir=data\test_dir --weight_file=weights_cae\cae_1499.pth --batch_size=2
 ```
 
 # コマンドのオプション
