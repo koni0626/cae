@@ -40,3 +40,8 @@ python ConvAutoEncoder.py --mode test --test_img_dir=data\test_dir --weight_file
 具体的には、各画素の差をとり、差の絶対値の合計値が出力される。
 
 学習済みデータやそれに近いデータをエンコードした場合は差が小さく、異常があったり、全く未知の画像だった場合は差分が大きくなる。
+
+# ConvAutoEncoderWithSRCNN.pyについて
+ConvAutoEncoderの出力層にSRCNNを追加したもの。
+ConvAutoEncoderよりきれいに再現できるはず。
+使い方は上記の手順のConvAutoEncoder.pyをConvAutoEncoderWithSRCNN.pyに置き換えて実行するだけ。
